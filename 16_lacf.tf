@@ -4,7 +4,7 @@ resource "aws_launch_configuration" "joon_lacf" {
   instance_type = "t2.micro"
   iam_instance_profile = "admin_role"
   security_groups = [aws_security_group.joon_sg.id]
-  key_name = "joon1-key"
+  key_name = "joon-key"
   user_data =<<-EOF
                 #!/bin/bash
                 systemctl start httpd
