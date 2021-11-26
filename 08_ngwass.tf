@@ -3,6 +3,11 @@ resource "aws_route_table_association" "joon_ngwass_pria" {
   route_table_id = aws_route_table.joon_ngwrt.id
 }
 
+resource "aws_route_table_association" "joon_ngwass_pric" {
+  subnet_id      = aws_subnet.joon_pric.id
+  route_table_id = aws_route_table.joon_ngwrt.id
+}
+
 resource "aws_route_table_association" "joon_ngwass_pridba" {
   subnet_id      = aws_subnet.joon_pridba.id
   route_table_id = aws_route_table.joon_ngwrt.id
