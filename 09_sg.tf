@@ -1,4 +1,4 @@
-resource "aws_security_group" "joon_sebsg" {
+resource "aws_security_group" "joon_sg" {
   name        = "joon-sg"
   description = "HTTP_ICMP_SQL"
   vpc_id      = aws_vpc.joon_vpc.id
