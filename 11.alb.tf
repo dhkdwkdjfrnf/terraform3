@@ -8,3 +8,7 @@ resource "aws_lb" "joon_alb" {
     "Name" = "joon-alb"
   }
 }
+
+output "dns_name" {
+  value = aws_lb.joon_alb.dns_name
+}
