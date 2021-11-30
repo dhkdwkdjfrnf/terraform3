@@ -14,6 +14,7 @@ sed -i 's/database_name_here/mydb/g' /var/www/html/wp-config.php
 sed -i 's/username_here/admin/g' /var/www/html/wp-config.php
 sed -i 's/password_here/It12345!/g' /var/www/html/wp-config.php
 sed -i 's/localhost/mydb.cxgw0ptzrthf.ap-northeast-2.rds.amazonaws.com/g' /var/www/html/wp-config.php
+#sed -i 's/localhost/mydb.cz3u8xoatqtq.ap-northeast-1.rds.amazonaws.com/g' /var/www/html/wp-config.php
 cat > /var/www/html/health.html << EOF
 <html><body><h1>SDKIM WEB SERVER _ health </h1></body></html>
 EOF
